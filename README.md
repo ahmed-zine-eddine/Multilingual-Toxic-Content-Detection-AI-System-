@@ -1,6 +1,6 @@
 # Multilingual Toxic Content Detection System
 
-A lightweight, full-stack Django AI project to detect toxic words, hate speech, insults, offensive language, and harmful content from Text, PDFs, and Images using advanced Natural Language Processing (NLP) and Optical Character Recognition (OCR).
+A lightweight,  AI project to detect toxic words, hate speech, insults, offensive language, and harmful content from Text, PDFs, and Images using advanced Natural Language Processing (NLP) and Optical Character Recognition (OCR).
 
 ## Features
 
@@ -10,7 +10,6 @@ A lightweight, full-stack Django AI project to detect toxic words, hate speech, 
   2. **PDF**: Extracts text from PDFs using `pdfplumber` and analyzes it.
   3. **Image (OCR)**: Extracts text from images using `EasyOCR` and analyzes it.
 - **Lightweight AI Pipeline**: Built to run on standard hardware (CPU) using DistilBERT/XLM-RoBERTa architecture.
-- **Clean UI/UX**: Professional Dark Mode single-page application built with Tailwind CSS and Alpine.js.
 - **Synthetic Dataset Generation**: Includes a script to generate a customized multilingual toxicity dataset for fine-tuning.
 
 ---
