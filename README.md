@@ -1,6 +1,10 @@
 # Multilingual Toxic Content Detection System
 
+<<<<<<< HEAD
 A lightweight, full-stack Django AI project to detect toxic words, hate speech, insults, offensive language, and harmful content from Text, PDFs, and Images using advanced Natural Language Processing (NLP) and Optical Character Recognition (OCR).
+=======
+A lightweight,  AI project to detect toxic words, hate speech, insults, offensive language, and harmful content from Text, PDFs, and Images using advanced Natural Language Processing (NLP) and Optical Character Recognition (OCR).
+>>>>>>> c70dac81ec03fd7337026dbc251503b6fab17cc1
 
 ## Features
 
@@ -10,7 +14,10 @@ A lightweight, full-stack Django AI project to detect toxic words, hate speech, 
   2. **PDF**: Extracts text from PDFs using `pdfplumber` and analyzes it.
   3. **Image (OCR)**: Extracts text from images using `EasyOCR` and analyzes it.
 - **Lightweight AI Pipeline**: Built to run on standard hardware (CPU) using DistilBERT/XLM-RoBERTa architecture.
+<<<<<<< HEAD
 - **Clean UI/UX**: Professional Dark Mode single-page application built with Tailwind CSS and Alpine.js.
+=======
+>>>>>>> c70dac81ec03fd7337026dbc251503b6fab17cc1
 - **Synthetic Dataset Generation**: Includes a script to generate a customized multilingual toxicity dataset for fine-tuning.
 
 ---
@@ -43,6 +50,7 @@ The system uses a hybrid AI pipeline decoupled into distinct services inside a m
 ```
 multilingual_toxic_system/
 │
+<<<<<<< HEAD
 ├── toxic_detector/        # Django project settings and main URLs
 │
 ├── detector/              # Core Django App
@@ -50,6 +58,11 @@ multilingual_toxic_system/
 │   ├── services/          # Business logic: ai_service, ocr_service, pdf_service
 │   ├── templates/         # HTML interface (index.html)
 │   ├── static/            # Custom CSS and frontend JavaScript logic (Tailwind/Alpine)
+=======
+│
+│   ├── ai/                # Preprocessing and NLP text cleaning utilities
+│   ├── services/          # Business logic: ai_service, ocr_service, pdf_service
+>>>>>>> c70dac81ec03fd7337026dbc251503b6fab17cc1
 │   ├── views.py           # API endpoints for frontend interaction
 │   └── urls.py            # App routing
 │
@@ -100,6 +113,7 @@ python training/evaluate.py
 
 _Note: If you skip training, the app will automatically download and use a fallback pre-trained multilingual model on first run._
 
+<<<<<<< HEAD
 ### 3. Run the Web Application
 
 ```bash
@@ -114,6 +128,8 @@ Visit `http://127.0.0.1:8000` in your browser.
 
 ---
 
+=======
+>>>>>>> c70dac81ec03fd7337026dbc251503b6fab17cc1
 ## 📊 Evaluation & Metrics
 
 The evaluation script (`training/evaluate.py`) outputs:
@@ -144,9 +160,12 @@ This document provides a comprehensive, deep-dive explanation of the entire arch
 The system is designed as a **Full-Stack Monolithic Application** prioritizing local inference (running entirely on standard CPU hardware without requiring external paid APIs).
 
 ### The Stack
+<<<<<<< HEAD
 
 - **Backend Framework**: Django (Python) - Serves the API endpoints and handles file uploads.
 - **Frontend Framework**: HTML5, Alpine.js (for lightweight reactivity), and Tailwind CSS (for modern UI styling).
+=======
+>>>>>>> c70dac81ec03fd7337026dbc251503b6fab17cc1
 - **Machine Learning Core**: PyTorch & HuggingFace Transformers.
 - **Computer Vision / OCR**: EasyOCR & OpenCV.
 - **PDF Processing**: `pdfplumber`.
